@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="652.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pets.controller.Controller">
+    <children>
+        <ImageView fitHeight="673.0" fitWidth="942.0" layoutX="-18.0" layoutY="-21.0">
+            <image>
+                <Image url="@../../../backgroud.jpg" />
+            </image>
+
+        </ImageView>
+    <AnchorPane layoutX="209.0" layoutY="196.0" minHeight="0.0" minWidth="0.0" prefHeight="382.0" prefWidth="502.0" style="-fx-background-color: #FAC69F; -fx-background-radius: 20;">
+         <children>
+              <TextField fx:id="usernameField" layoutX="96.0" layoutY="126.0" prefHeight="45.0" prefWidth="287.0" promptText="Email" style="-fx-background-radius: 20; -fx-background-color: white; -fx-prompt-text-fill: E6B591;-fx-text-fill: E6B591;">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" offsetX="5.0" offsetY="5.0" radius="11.93" spread="0.62" width="49.72">
+                     <color>
+                        <Color red="1.0" green="0.30000001192092896" opacity="0.15617021918296814" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </TextField>
+              <Button layoutX="162.0" layoutY="279.0" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="49.0" prefWidth="155.0" style="-fx-background-color: #F75900; -fx-background-radius: 50;" text="Entrar" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans Ultra Bold" size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="1.0" green="0.3019607961177826" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+              <PasswordField fx:id="passwordField" cache="true" layoutX="96.0" layoutY="191.0" prefHeight="45.0" prefWidth="287.0" promptText="Senha" style="-fx-background-radius: 20; -fx-background-color: white; -fx-prompt-text-fill: E6B591;-fx-text-fill: E6B591;">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <font>
+                  <Font name="Gill Sans MT" size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow height="72.91" offsetX="5.0" offsetY="5.0" radius="33.5075" width="63.12">
+                     <color>
+                        <Color red="1.0" green="0.30000001192092896" opacity="0.4749240279197693" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </PasswordField>
+              <Label layoutX="192.0" layoutY="64.0" text="Login" textFill="#f75900">
+               <font>
+                  <Font name="Gill Sans Ultra Bold" size="28.0" />
+               </font>
+            </Label>
+              <Hyperlink layoutX="158.0" layoutY="357.0" onAction="#cadastroButtonClicked" prefHeight="21.0" prefWidth="186.0" text="Não tem uma conta? Cadastre-se" textFill="WHITE">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font></Hyperlink>
+
+
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="273.0" layoutY="45.0" prefHeight="200.0" prefWidth="200.0">
+         <children> <Pane layoutX="36.0" layoutY="6.0" prefHeight="170.0" prefWidth="259.0">
+               <children>
+                 <ImageView fitHeight="212.0" layoutX="-18.0" layoutY="-21.0">
+                     <image>
+                         <Image url="@../../../petsLogin.png" />
+                     </image>
+                     <fitWidth>
+                         <Double fx:value="309.0" />
+                     </fitWidth>
+                 </ImageView>
+               </children>
+          </Pane>
+         </children>
+      </AnchorPane>
+        <Label fx:id="messageLabel" layoutX="327.0" layoutY="607.0" prefHeight="18.0" prefWidth="252.0" textFill="#ff4000">
+         <font>
+            <Font name="Gill Sans MT" size="15.0" />
+         </font>
+      </Label>
+
+
+    </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.Double?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="735.0" prefWidth="561.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pets.controller.EditarCachorroController">
+<ImageView fitHeight="229.0" layoutX="410.0" layoutY="313.0">
+    <image>
+        <Image url="@/doguinnn.png" />
+    </image>
+    <fitWidth>
+        <Double fx:value="137.0" />
+    </fitWidth>
+</ImageView>
+<Pane layoutX="108.0" layoutY="110.0" prefHeight="438.0" prefWidth="346.0" style="-fx-background-color: FFCAAD; -fx-background-radius: 30;">
+    <children>
+        <TextField fx:id="nomeField" layoutX="55.0" layoutY="36.0" prefHeight="44.0" prefWidth="236.0" promptText="Nome" style="-fx-background-color: white; -fx-background-radius: 20; -fx-prompt-text-fill: E6B591;-fx-text-fill: E6B591;">
+            <opaqueInsets>
+                <Insets left="50.0" />
+            </opaqueInsets>
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <font>
+                <Font name="Gill Sans MT Condensed" size="19.0" />
+            </font>
+        </TextField>
+
+        <TextField fx:id="idadeField" layoutX="55.0" layoutY="91.0" prefHeight="44.0" prefWidth="236.0" promptText="Idade" style="-fx-background-color: white; -fx-background-radius: 20; -fx-prompt-text-fill: E6B591;-fx-text-fill: E6B591;">
+            <cursor>
+                <Cursor fx:constant="TEXT" />
+            </cursor>
+            <font>
+                <Font name="Gill Sans MT Condensed" size="19.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="corField" layoutX="55.0" layoutY="148.0" prefHeight="44.0" prefWidth="236.0" promptText="Cor" style="-fx-background-color: white; -fx-background-radius: 20; -fx-prompt-text-fill: E6B591;-fx-text-fill: E6B591;">
+            <font>
+                <Font name="Gill Sans MT Condensed" size="19.0" />
+            </font></TextField>
+        <TextField fx:id="racaField" layoutX="53.0" layoutY="205.0" prefHeight="44.0" prefWidth="236.0" promptText="Raça" style="-fx-background-color: white; -fx-background-radius: 20; -fx-prompt-text-fill: E6B591;-fx-text-fill: E6B591;">
+            <font>
+                <Font name="Gill Sans MT Condensed" size="19.0" />
+            </font></TextField>
+        <ComboBox fx:id="donoComboBox" cache="true" layoutX="53.0" layoutY="262.0" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-prompt-text-fill: E6B591;-fx-text-fill: E6B591;" />
+        <Button layoutX="55.0" layoutY="332.0" onAction="#selecionarImagem" prefHeight="44.0" prefWidth="236.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-prompt-text-fill: E6B591;-fx-text-fill: E6B591;" text="Imagem do cachorro                  " textFill="#e6b591">
+            <font>
+                <Font name="Gill Sans MT Condensed" size="19.0" />
+            </font></Button>
+    </children>
+</Pane>
+<Label layoutX="170.0" layoutY="48.0" text="Editar Cachorro" textFill="#ff6900">
+    <font>
+        <Font name="Gill Sans Ultra Bold" size="22.0" />
+    </font></Label>
+
+<Button layoutX="187.0" layoutY="640.0" onAction="#salvarEdicao" prefHeight="44.0" prefWidth="186.0" style="-fx-background-color: #ff6900; -fx-background-radius: 30;" text="Salvar" textFill="WHITE">
+    <font>
+        <Font name="Gill Sans Ultra Bold" size="19.0" />
+    </font>
+    <effect>
+        <DropShadow height="0.0" offsetX="5.0" offsetY="5.0" radius="5.335" spread="0.35" width="23.34">
+            <color>
+                <Color red="1.0" green="0.37588831782341003" opacity="0.4699999988079071" />
+            </color>
+        </DropShadow>
+    </effect></Button>
+<ImageView fx:id="imagemCachorroView" fitHeight="113.0" fitWidth="137.0" layoutX="212.0" layoutY="505.0" />
+
+
+</AnchorPane>
